@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Про нас</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Inter", sans-serif;
+        }
+
+        /* header */
+        header {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: 120px;
+            border-bottom: #00391F 2px solid;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0;
+            background-color: white;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+
+        header img {
+            max-height: 100px;
+            width: auto;
+        }
+
+        .logo button {
+            background-color: #EFEFEF;
+            color: #00391F;
+            border: 0.2px solid #dcdbdb;
+            box-shadow: 0 0 5px 4px #EFEFEF;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .pr {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .pr svg,
+        .pr span {
+            display: inline-block;
+        }
+
+        .pr svg {
+            width: 20px;
+            height: 20px;
+            fill: #00391F;
+            transition: transform 0.3s ease;
+        }
+
+        .pr:hover svg {
+            transform: rotate(180deg);
+        }
+
+        .logo {
+            flex: 0.5;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        nav {
+            flex: 0.4;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        nav div {
+            display: inline-block;
+            text-align: center;
+            padding: 10px;
+            font-size: 16px;
+            color: #00391F;
+            border-radius: 5px;
+            box-shadow: 0 0 5px 4px #EFEFEF;
+            transition: background-color 2s;
+        }
+
+        nav div:hover {
+            background-color: #00391F;
+            color: white;
+        }
+
+        div a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        /* about section */
+        section {
+            margin-top: 120px;
+            /* to avoid overlap with fixed header */
+            padding: 40px;
+        }
+
+        .about-section {
+            max-width: 1200px;
+            font-family: 'Verdana', sans-serif;
+        }
+
+        .about-flex {
+            display: flex;
+            align-items: flex-start;
+            gap: 40px;
+        }
+
+        .about-logo {
+            width: 260px;
+            min-width: 200px;
+            height: auto;
+            margin-top: 20px;
+        }
+
+        .about-text {
+            flex: 1;
+        }
+
+        .about-text h1 {
+            font-size: 32px;
+            font-weight: 400;
+            margin-bottom: 32px;
+            text-align: left;
+            color: #00391F;
+        }
+
+        .about-text {
+            font-size: 20px;
+            font-weight: 300;
+            margin-bottom: 18px;
+            text-align: left;
+            color: #727272;
+        }
+
+        ul {
+            color: #727272;
+            border-left: 5px solid #00391F;
+            list-style-type: none;
+            padding: 10px 20px;
+        }
+
+        @media (max-width: 768px) {
+            .about-logo {
+                display: none;
+            }
+
+            .about-text h1 {
+                font-size: 27px;
+                font-weight: 400;
+            }
+
+            .about-text {
+                font-size: 18px;
+                font-weight: 300;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <div><img src="logo_furniture_wholesale.svg" alt="Logo for furniture wholesale store"></div>
+            <div class="dropdown">
+                <button class="pr">
+                    <svg width="34" height="24" viewBox="0 0 34 24" xmlns="http://www.w3.org/2000/svg">
+                        <path class="s1" d="M2 2H32" stroke="#00391F" stroke-width="4" stroke-linecap="round" />
+                        <path class="s2" d="M2 12H32" stroke="#00391F" stroke-width="4" stroke-linecap="round" />
+                        <path class="s3" d="M2 22H32" stroke="#00391F" stroke-width="4" stroke-linecap="round" />
+                    </svg>
+                    <span> ПРОДУКЦІЯ</span>
+                </button>
+                <div class="bb"><img src="burger_menu.svg" alt="burger_menu"></div>
+                <div class="dropdown-menu-container">
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="dropdown-item" href="#">Вітальні<span class="plus-icon">+</span></a>
+                            <ul class="dropdown-submenu">
+                                <li><a class="item" href="PDF/ВітальніКС.pdf">Вітальні Фабрика Київський Стандарт</a>
+                                </li>
+                                <li><a class="item" href="PDF/ВітальніМС.pdf">Вітальні Фабрика Мебель-сервіс</a></li>
+                                <li><a class="item" href="PDF/Вітальні_клас_ММ.pdf">Вітальні класика Фабрика
+                                        Миро-Марк</a>
+                                </li>
+                                <li><a class="item" href="PDF/Вітальні_модерн_ММ.pdf">Вітальні модерн Фабрика
+                                        Миро-Марк</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Дерев'яні ліжка<span class="plus-icon">+</span></a>
+                            <ul class="dropdown-submenu">
+                                <li><a class="item" href="PDF/Ліжка_дер_Кемпас-GreenLife.pdf">Дерев'яні ліжка GreenLife
+                                        Фабрика Kempas</a></li>
+                                <li><a class="item" href="PDF/Ліжка_дер_Кемпас_Стандарт.pdf">Дерев'яні ліжка Standart
+                                        Фабрика Kempas</a></li>
+                                <li><a class="item" href="PDF/Ліжка_дер_Мебігранд.pdf">Дерев'яні ліжка Фабрика
+                                        Мебігранд</a>
+                                </li>
+                                <li><a class="item" href="PDF/Ліжка_дер_МС.pdf">Дерев'яні ліжка Фабрика Мебель
+                                        Сервіс</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Дивани прямі і кутові<span class="plus-icon">+</span></a>
+                            <ul class="dropdown-submenu">
+                                <li><a class="item" href="PDF/Дивани_кутові_КС.pdf">Дивани кутові Фабрика Київський
+                                        Стандарт</a></li>
+                                <li><a class="item" href="PDF/Дивани_прямі_КС.pdf">Дивани прямі Фабрика Київський
+                                        Стандарт</a></li>
+                                <li><a class="item" href="PDF/Дивани_кутові_МС.pdf">Дивани кутові Фабрика Мебель
+                                        Сервіс</a>
+                                </li>
+                                <li><a class="item" href="PDF/Дивани_прямі_МС.pdf">Дивани прямі Фабрика Мебель
+                                        Сервіс</a>
+                                </li>
+                                <li><a class="item" href="PDF/Дивани_прямі_і_кутові_Сократ.pdf">Дивани прямі і кутові
+                                        Фабрика Сократ Свінг</a></li>
+                                <li><a class="item" href="PDF/Дивани_прямі_і_кутові_Mebwood.pdf">Дивани прямі і кутові
+                                        Фабрика Mebwood</a></li>
+                                <li><a class="item" href="PDF/Дитячі_дивани_МС.pdf">Диванчики дитячі Фабрика Мебель
+                                        Сервіс</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Комоди<span class="plus-icon">+</span></a>
+                            <ul class="dropdown-submenu">
+                                <li><a class="item" href="PDF/Комоди_КС.pdf">Комоди Фабрика Київський Стандарт</a></li>
+                                <li><a class="item" href="PDF/Комоди_Мебігранд.pdf">Комоди Фабрика Мебігранд</a></li>
+                                <li><a class="item" href="PDF/Комоди_різні_КС.pdf">Комоди різні Фабрика Київський
+                                        Стандарт</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Кухні<span class="plus-icon">+</span></a>
+                            <ul class="dropdown-submenu">
+                                <li><a class="item" href="PDF/Кухні_Нові-серії_КС.pdf">Кухні нові серії Фабрика
+                                        Київський
+                                        Стандарт</a></li>
+                                <li><a class="item" href="PDF/Кухні-Серія-ДСП-КС.pdf">Кухні Готові рішення Серія ДСП
+                                        Фабрика
+                                        Київський Стандарт</a></li>
+                                <li><a class="item" href="PDF/Кухні-Серія-Плівка-КС.pdf">Кухні Готові рішення Серія
+                                        Плівка
+                                        Фабрика Київський Стандарт</a></li>
+                                <li><a class="item" href="PDF/Кухні-Серія-Фарба-КС.pdf">Кухні Готові рішення Серія Фарба
+                                        Фабрика Київський Стандарт</a></li>
+                                <li><a class="item" href="PDF/Кухні_модульні_КС.pdf">Кухні Модульні довільного вибору
+                                        Фабрика Київський Стандарт</a></li>
+                                <li><a class="item" href="PDF/Технічна_інфо_КС.pdf">Кухні Технічна інформація Фабрика
+                                        Київський Стандарт</a></li>
+                                <li><a class="item" href="PDF/Кухні_МС.pdf">Кухні Фабрика Мебель Сервіс</a></li>
+                                <li><a class="item" href="PDF/Кухні_фасади_ММ.pdf">Кухні Фабрика Миро Марк</a></li>
+                                <li><a class="item" href="PDF/Кухні-кут_Mebwood.pdf">Кухні Фабрика Mebwood</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">М'які ліжка<span class="plus-icon">+</span></a>
+                            <ul class="dropdown-submenu">
+                                <li><a class="item" href="PDF/Ліжка_мякі_Різо.pdf">М'які ліжка Фабрика Різо</a></li>
+                                <li><a class="item" href="PDF/Мякі-ліжка_КС.pdf">М'які ліжка Фабрика Київський
+                                        Стандарт</a>
+                                </li>
+                                <li><a class="item" href="PDF/Мякі_крісла_КС.pdf">М'які крісла Фабрика Київський
+                                        Стандарт</a></li>
+                                <li><a class="item" href="PDF/Ліжка_крісла_Сократ.pdf">М'які ліжка і крісла Фабрика
+                                        Сократ
+                                        Свінг</a></li>
+                                <li><a class="item" href="PDF/Мякі_ліжка_МС.pdf">М'які ліжка Фабрика Мебель Сервіс</a>
+                                </li>
+                                <li><a class="item" href="PDF/Мякі-ліжка_ММ.pdf">М'які ліжка Фабрика Миро Марк</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Передпокої<span class="plus-icon">+</span></a>
+                            <ul class="dropdown-submenu">
+                                <li><a class="item" href="PDF/Передпокої_КС.pdf">Передпокої Фабрика Київський
+                                        Стандарт</a>
+                                </li>
+                                <li><a class="item" href="PDF/Передпокої_МС.pdf">Передпокої Фабрика Мебель Сервіс</a>
+                                </li>
+                                <li><a class="item" href="PDF/Передпокої_ММ.pdf">Передпокої Фабрика Миро Марк</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Різне(шафи розпашні, стелажі, полиці, тумби, інше)<span
+                                    class="plus-icon">+</span></a>
+                            <ul class="dropdown-submenu">
+                                <li><a class="item" href="PDF/Серії_шаф_розпашних_КС.pdf">Серії Шаф розпашних Фабрика
+                                        Київський Стандарт</a></li>
+                                <li><a class="item" href="PDF/Шафи-розпашні-різні_КС.pdf">Шафи розпашні різні Фабрика
+                                        Київський Стандарт</a></li>
+                                <li><a class="item" href="PDF/Decor-Collection_ММ.pdf">Decor Collection Фабрика Миро
+                                        Марк</a></li>
+                                <li><a class="item" href="PDF/Відкриті-вішалки_КС.pdf">Відкриті вішаки Фабрика Київський
+                                        Стандарт</a></li>
+                                <li><a class="item" href="PDF/Дзеркала_КС.pdf">Дзеркала Фабрика Київський Стандарт</a>
+                                </li>
+                                <li><a class="item" href="PDF/Ліжка-різні_КС.pdf">Ліжка різні Фабрика Київський
+                                        Стандарт</a>
+                                </li>
+                                <li><a class="item" href="PDF/Тумби-навісні-полиці-стелажі_КС.pdf">Стелажі, полиці,
+                                        тумби
+                                        навісні Фабрика Київський Стандарт</a></li>
+                                <li><a class="item" href="PDF/Тумби-на-антресолі_КС.pdf">Тумби на антресолі Фабрика
+                                        Київський Стандарт</a></li>
+                                <li><a class="item" href="PDF/Тумби-навісні-і-полиці-навісні_КС.pdf">Тумби навісні і
+                                        полиці
+                                        навісні Фабрика Київський Стандарт</a></li>
+                                <li><a class="item" href="PDF/Тумби-приліжкові_КС.pdf">Тумби приліжкові Фабрика
+                                        Київський
+                                        Стандарт</a></li>
+                                <li><a class="item" href="PDF/Тумби-ТБ_КС.pdf">Тумби ТБ Фабрика Київський Стандарт</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Модульні системи для різних кімнат<span
+                                    class="plus-icon">+</span></a>
+                            <ul class="dropdown-submenu">
+                                <li><a class="item" href="PDF/Системи_КС.pdf">Системи Фабрика Київський Стандарт</a>
+                                </li>
+                                <li><a class="item" href="PDF/Системи_МС.pdf">Системи Фабрика Мебель Сервіс</a></li>
+                                <li><a class="item" href="PDF/Системи_колекції_Mebwood.pdf">Колекції Фабрика Mebwood</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Спальні<span class="plus-icon">+</span></a>
+                            <ul class="dropdown-submenu">
+                                <li><a class="item" href="PDF/Спальні_модерн_ММ.pdf">Спальні модерн Фабрика Миро
+                                        Марк</a>
+                                </li>
+                                <li><a class="item" href="PDF/Спальні_класика_ММ.pdf">Спальні класика Фабрика Миро
+                                        Марк</a>
+                                </li>
+                                <li><a class="item" href="PDF/Спальні_МС.pdf">Спальні Фабрика Мебель Сервіс</a></li>
+                                <li><a class="item" href="PDF/Спальні_КС.pdf">Спальні Фабрика Київський Стандарт</a>
+                                </li>
+                                <li><a class="item" href="PDF/Спальні_Mebwood.pdf">Спальні і ліжка Фабрика Mebwood</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Столи обідні, письмові, журнальні і крісла<span
+                                    class="plus-icon">+</span></a>
+                            <ul class="dropdown-submenu">
+                                <li><a class="item" href="PDF/Столи_Тиса.pdf">Столи обідні і крісла Фабрика Тиса</a>
+                                </li>
+                                <li><a class="item" href="PDF/Столи_Марко.pdf">Столи обідні і крісла Фабрика Марко</a>
+                                </li>
+                                <li><a class="item" href="PDF/Столи_КС.pdf">Столи обідні Фабрика Київський Стандарт</a>
+                                </li>
+                                <li><a class="item" href="PDF/Столи_МС.pdf">Столи(і письмові і журнальні), крісла
+                                        Фабрика
+                                        Мебель Сервіс</a></li>
+                                <li><a class="item" href="PDF/Столи_письмові_КС.pdf">Столи письмові Фабрика Київський
+                                        Стандарт</a></li>
+                                <li><a class="item" href="PDF/Меблі-для-офісу._КС.pdf">Меблі для офісу Фабрика Київський
+                                        Стандарт</a></li>
+                                <li><a class="item" href="PDF/Столи-різні_КС.pdf">Столи різні Фабрика Київський
+                                        Стандарт</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Тумби під взуття<span class="plus-icon">+</span></a>
+                            <ul class="dropdown-submenu">
+                                <li><a class="item" href="PDF/Тумби-під-взуття-різні_КС.pdf">Тумби для взуття Фабрика
+                                        Київський Стандарт</a></li>
+                                <li><a class="item" href="PDF/Тумби-під-взуття_МС.pdf">Тумби для взуття Фабрика Мебель
+                                        Сервіс</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Шафи-купе і гардеробні<span class="plus-icon">+</span></a>
+                            <ul class="dropdown-submenu">
+                                <li><a class="item" href="PDF/Гардеробні-кімнати_КС.pdf">Гардеробні кімнати Фабрика
+                                        Київський Стандарт</a></li>
+                                <li><a class="item" href="PDF/Шафи-купе-і-гардиробні_ММ.pdf">Шафи-купе і гардеробні
+                                        Фабрика
+                                        Миро Марк</a></li>
+                                <li><a class="item" href="PDF/Шафи-купе-з-надтнк-пр-Баварія_КС.pdf">Шафи-купе "Баварія"
+                                        Фабрика Київський Стандарт</a></li>
+                                <li><a class="item" href="PDF/ШК2Дв_КС.pdf">Шафи-купе 2-дверні Фабрика Київський
+                                        Стандарт</a></li>
+                                <li><a class="item" href="PDF/ШК3Дв_КС.pdf">Шафи-купе 3-дверні Фабрика Київський
+                                        Стандарт</a></li>
+                                <li><a class="item" href="PDF/ШК4Дв_КС.pdf">Шафи-купе 4-дверні Фабрика Київський
+                                        Стандарт</a></li>
+                                <li><a class="item" href="PDF/ШК5Дв_КС.pdf">Шафи-купе 5-дверні Фабрика Київський
+                                        Стандарт</a></li>
+                                <li><a class="item" href="PDF/ШК6Дв_КС.pdf">Шафи-купе 6-дверні Фабрика Київський
+                                        Стандарт</a></li>
+                                <li><a class="item" href="PDF/Шафи-купе-КЗ_КС.pdf">Кутові закінчення Фабрика Київський
+                                        Стандарт</a></li>
+                                <li><a class="item" href="PDF/Шафи-купе-Кіноман_КС.pdf">Шафи-кіноман Фабрика Київський
+                                        Стандарт</a></li>
+                                <li><a class="item" href="PDF/Шафи-купе-кутові_КС.pdf">Шафи-купе кутові Фабрика
+                                        Київський
+                                        Стандарт</a></li>
+                                <li><a class="item" href="PDF/Матеріали_комб.фасадів_КС.pdf">Комбінації фасадів Фабрика
+                                        Київський Стандарт</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="dropdown-item ab" href="#">Головна і контакти<span class="plus-icon">+</span></a>
+                            <ul class="dropdown-submenu">
+                                <li><a href="index.html">Головна сторінка</a></li>
+                                <li><a href="index.html#contacts">Контакти</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <div><a href="index.html">Головна сторінка</a></div>
+            <div><a href="about.html">Про нас</a></div>
+            <div><a href="index.html#contacts">Контакти</a></div>
+        </nav>
+    </header>
+
+    <section class="about-section">
+        <div class="about-flex">
+            <img src="logo_furniture_wholesale.svg" alt="Гуртівня Меблів" class="about-logo">
+            <div class="about-text">
+                <h1>Про Меблеву Гуртівню | гурт і роздріб</h1>
+                <article>
+                    У сучасному активному житті, коли справ стає все більше, а часу все менше, важливо, прийшовши
+                    додому, відчути себе комфортно і вільно. Меблі – важлива складова будь-якого будинку. Ви вечеряєте
+                    за зручним столом, дивитесь телевізор на улюбленому дивані, спите в м’якому і затишному ліжку,
+                    наповнюючись енергією для нових звершень!
+                    Ви знаєте, де можна купити містку шафу, зручний стіл або ящики на кухню і не витратити всі
+                    заощадження?
+                    Ми пропонуємо Вам більше не витрачати час на виснажливі багатогодинні походи по магазинах, якщо вам
+                    достатньо інформації онлайн, взнати ціну, сконтактувавшись з нами, все обговорити, вияснити і
+                    замовити
+                    товар. Але також ви можете, приїхати до нас і побачити багато меблів “вживу”, особливо коли
+                    розумієте,
+                    що такого роду покупка має бути на багато років.
+                    Наш виставковий зал має близько 1500 м.кв. для того щоб ви фізично побачили товар, який звичайно не
+                    весь
+                    але відповідно багато його зібраного на виставці.
+                    Ми пропонуємо меблі як для роздрібних клієнтів, так і відкриті для розмови про співпрацю з новими
+                    оптовими клієнтами.
+                    Одна з причин чому вибрати фабричні меблі, а не під замовлення, хоча і той і інший варіант має свої
+                    переваги.
+                    Меблі фабричні переважно є дешевшими через масштаби виробництва, особливо коли вам і підходить і
+                    подобається. А моделі розробили виходячи з того які параметри тих меблів людям більше
+                    потрібні, що напрацьоване роками галуззю виробництва меблів.
+                    <h3>Серед нашого асортименту є:</h3>
+                    <ul>
+                        <li>Спальні і ліжка</li>
+                        <li>Пенали і шафи розпашні</li>
+                        <li>Шафи-купе</li>
+                        <li>Вітальні і комоди</li>
+                        <li>Кухонні гарнітури</li>
+                        <li>Письмові і комп’ютерні столи</li>
+                        <li>Модульні системи для різних типів кімнат</li>
+                        <li>Прихожі</li>
+                        <li>Дерев’яні ліжка</li>
+                        <li>Меблі що поєднують елементи металу, елементи різних матеріалів, скла</li>
+                        <li>Різного роду крісла і столи</li>
+                        <li>Дивани і диванчики</li>
+                        <li>Кутові дивани</li>
+                        <li>Інші меблі, а також великий асортимент матраців.</li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <script src="script2.js"></script>
+    <script src="script.js" defer></script>
+</body>
+
+</html>
