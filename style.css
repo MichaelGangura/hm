@@ -427,7 +427,7 @@ iframe {
 
   overflow-y: auto;
   /* Дозволяє прокрутку */
-  max-height: 80vh;
+  max-height: 70vh;
   /* Максимальна висота, щоб прокрутка працювала */
   overscroll-behavior: contain;
   -webkit-overflow-scrolling: touch;
