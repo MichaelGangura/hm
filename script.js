@@ -52,7 +52,6 @@ const galleryData = {
         { type: 'set', id: 'modulniKS', image: 'images/Кухні/thumb_Модульні.png', title: 'Кухні Модульні довільного вибору Фабрика Київський Стандарт', file: 'PDF/Кухні_модульні_КС.pdf' },
         { type: 'set', id: 'techInfoKS', image: 'images/Кухні/thumb_Технічна-інформація.png', title: 'Кухні Технічна інформація Фабрика Київський Стандарт', file: 'PDF/Технічна_інфо_КС.pdf' },
         { type: 'set', id: 'kukhniMS', image: 'images/Кухні/thumb_Кухні.-Фабрика-Мебель-Сервіс.png', title: 'Кухні Фабрика Мебель Сервіс', file: 'PDF/Кухні_МС.pdf' },
-        { type: 'set', id: 'kukhniMM', image: 'images/Кухні/thumb_Кухні.-Фабрика-Миро-Марк.png', title: 'Кухні Фабрика Миро Марк', file: 'PDF/Кухні_фасади_ММ.pdf' },
         { type: 'set', id: 'kukhniMebwood', image: 'images/Кухні/thumb_Кухні-і-кут-кухонний.-Фабрика-Mebwood.png', title: 'Кухні Фабрика Mebwood', file: 'PDF/Кухні-кут_Mebwood.pdf' },
         { type: 'back', title: 'Назад' }
     ],
