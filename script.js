@@ -1,18 +1,18 @@
 const galleryData = {
     'main': [
-        { type: 'category', id: 'vitalni', image: 'images/thumb_Вітальні.png', title: 'Вітальні' },
-        { type: 'category', id: 'derevyani-lizhka', image: 'images/thumb_Деревяні-ліжка.png', title: "Дерев'яні ліжка" },
-        { type: 'category', id: 'dyvany', image: 'images/thumb_Дивани.png', title: 'Дивани прямі і кутові' },
-        { type: 'category', id: 'komody', image: 'images/thumb_Комоди.png', title: 'Комоди' },
-        { type: 'category', id: 'kukhni', image: 'images/thumb_Кухні.png', title: 'Кухні' },
-        { type: 'category', id: 'myaki-lizhka', image: 'images/thumb_Мякі-ліжка.png', title: "М'які ліжка" },
-        { type: 'category', id: 'peredpokoyi', image: 'images/thumb_Передпокої.png', title: 'Передпокої' },
-        { type: 'category', id: 'rizne', image: 'images/thumb_різне.png', title: 'Різне(шафи розпашні, стелажі, полиці, тумби, інше)' },
-        { type: 'category', id: 'systemy', image: 'images/thumb_Системи.png', title: 'Модульні системи для різних кімнат' },
-        { type: 'category', id: 'spalni', image: 'images/thumb_Спальні.png', title: 'Спальні' },
-        { type: 'category', id: 'stoly', image: 'images/thumb_Столи.png', title: 'Столи обідні, письмові, журнальні і крісла' },
-        { type: 'category', id: 'tumby-pid-vzuttya', image: 'images/thumb_Тумби-під-взуття.png', title: 'Тумби під взуття' },
-        { type: 'category', id: 'shafy-kupe', image: 'images/thumb_Шафи-купе.png', title: 'Шафи-купе і гардеробні' }
+        { type: 'category', id: 'vitalni', image: 'images/thumb_Вітальні.webp', title: 'Вітальні' },
+        { type: 'category', id: 'derevyani-lizhka', image: 'images/thumb_Деревяні-ліжка.webp', title: "Дерев'яні ліжка" },
+        { type: 'category', id: 'dyvany', image: 'images/thumb_Дивани.webp', title: 'Дивани прямі і кутові' },
+        { type: 'category', id: 'komody', image: 'images/thumb_Комоди.webp', title: 'Комоди' },
+        { type: 'category', id: 'kukhni', image: 'images/thumb_Кухні.webp', title: 'Кухні' },
+        { type: 'category', id: 'myaki-lizhka', image: 'images/thumb_Мякі-ліжка.webp', title: "М'які ліжка" },
+        { type: 'category', id: 'peredpokoyi', image: 'images/thumb_Передпокої.webp', title: 'Передпокої' },
+        { type: 'category', id: 'rizne', image: 'images/thumb_різне.webp', title: 'Різне(шафи розпашні, стелажі, полиці, тумби, інше)' },
+        { type: 'category', id: 'systemy', image: 'images/thumb_Системи.webp', title: 'Модульні системи для різних кімнат' },
+        { type: 'category', id: 'spalni', image: 'images/thumb_Спальні.webp', title: 'Спальні' },
+        { type: 'category', id: 'stoly', image: 'images/thumb_Столи.webp', title: 'Столи обідні, письмові, журнальні і крісла' },
+        { type: 'category', id: 'tumby-pid-vzuttya', image: 'images/thumb_Тумби-під-взуття.webp', title: 'Тумби під взуття' },
+        { type: 'category', id: 'shafy-kupe', image: 'images/thumb_Шафи-купе.webp', title: 'Шафи-купе і гардеробні' }
     ],
     'vitalni': [
         { type: 'set', id: 'vitalni-fabryka-kyivskyi-standart', image: 'images/Вітальні/thumb_Вітальні.-Фабрика-Київський-Стандарт.png', title: 'Вітальні Фабрика Київський Стандарт', file: 'PDF/ВітальніКС.pdf' },
