@@ -100,9 +100,6 @@ header img {
   transform: rotate(180deg);
 }
 
-/* .pr:hover svg, .pr:hover span {
-  color: white;
-} */
 .pr:hover {
   background-color: #00391F;
   color: white;

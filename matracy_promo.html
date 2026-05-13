@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Гуртівня О.Д.А. пропонує ортопедичні матраци по вигідній ціні.">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <title>Матраци</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #026C3B;
+        }
+
+        .matracy-m1 {
+            display: none;
+        }
+    
+        .wrapper {
+            background-color: #026C3B;
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: start;
+            padding: 20px;
+        }
+
+        .matracy1 {
+            width: 80%;
+            height: auto;
+        }
+
+        @media (max-width: 768px) {
+            .matracy1 {
+                width: 90%;
+            }
+            .wrapper {
+                height: auto;
+            }
+        }
+        @media (max-width: 480px) {
+            .matracy1 {
+                display: none;
+            }
+            .matracy-m1 {
+                display: block;
+                width: 90%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <img src="matracy_m1.png" alt="matracy" class="matracy-m1">
+        <img src="matracy1.png" alt="matracy" class="matracy1">
+    </div>
+</body>
+
+</html>
