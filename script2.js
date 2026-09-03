@@ -19,7 +19,28 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 item.classList.toggle('active');
 
-                if (item.classList.contains('active')) {
+
+                const isLastMenuItem = item.querySelector('.dropdown-item.ab');
+
+                if (item.classList.contains('active') && isLastMenuItem) {
+                    const parentContainer = item.closest('.dropdown-menu-container');
+
+                    if (parentContainer) {
+                        setTimeout(() => {
+                            const itemTop = item.offsetTop;
+                            const itemBottom = itemTop + item.offsetHeight;
+                            const visibleBottom =
+                                parentContainer.scrollTop + parentContainer.clientHeight;
+
+                            if (itemBottom > visibleBottom) {
+                                parentContainer.scrollTop =
+                                    itemBottom - parentContainer.clientHeight;
+                            }
+                        }, 300);
+                    }
+                }
+
+                /* if (item.classList.contains('active')) {
                     const parentContainer = item.closest('.dropdown-menu-container');
                     if (parentContainer) {
                         setTimeout(() => {
@@ -37,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             }
                         }, 300);
                     }
-                }
+                } */
             });
         }
     });

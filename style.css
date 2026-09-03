@@ -2,6 +2,13 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-padding-top: 80px;
+}
+
+#categories-section, #contacts {
+  scroll-margin-top: 80px;
+}
 /* inter-100 - cyrillic_latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
@@ -539,42 +546,44 @@ iframe {
 /* Стилі для субменю (АКОРДЕОН) */
 .dropdown-submenu {
   position: static;
-  /* Це вже у вашому файлі, і це правильно для акордеона */
   background-color: #004d2f;
-  /* Трохи темніший фон, щоб відрізняти від батьківського меню */
   color: white;
   list-style: none;
   padding: 0 0 0 20px;
-  /* Внутрішній відступ для пунктів субменю */
   margin: 0;
   border-radius: 0 0 5px 5px;
-  /* Округляємо тільки нижні кути */
-  z-index: 9997;
-  /* Трохи менше, ніж у головного меню, але все ще високий */
-
-  /* КЕРУВАННЯ ВИДИМІСТЮ ТА АНІМАЦІЯ */
-  display: none;
-  /* Приховано за замовчуванням */
   overflow: hidden;
-  /* Обрізаємо вміст, якщо потрібно, для transition */
   max-height: 0;
-  /* Початкова висота для анімації */
   opacity: 0;
-  /* Початкова прозорість */
   transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
-  /* Плавне розкриття */
-  box-shadow: inset 0px 5px 5px -5px rgba(0, 0, 0, 0.3);
-  /* Залишаємо тінь */
+  box-shadow: inset 0 5px 5px -5px rgba(0, 0, 0, 0.3);
 }
-
-/* Коли li активний (клас додається JavaScript'ом), показуємо субменю */
-.dropdown-menu li.active>.dropdown-submenu {
-  display: block;
-  /* Робимо видимим */
+.dropdown-menu li.active > .dropdown-submenu {
   max-height: 500px;
-  /* Достатньо велике значення для розкриття всього вмісту */
   opacity: 1;
 }
+/* .dropdown-submenu {
+  position: static;
+  background-color: #004d2f;
+  color: white;
+  list-style: none;
+  padding: 0 0 0 20px;
+  margin: 0;
+  border-radius: 0 0 5px 5px;
+  z-index: 9997;
+  display: none;
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+  box-shadow: inset 0px 5px 5px -5px rgba(0, 0, 0, 0.3);
+}
+
+.dropdown-menu li.active>.dropdown-submenu {
+  display: block;
+  max-height: 500px;
+  opacity: 1;
+} */
 
 /* Поворот плюсика при активному стані */
 .dropdown-menu li.active>.dropdown-item .plus-icon {

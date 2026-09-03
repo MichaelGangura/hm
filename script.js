@@ -34,7 +34,6 @@ const galleryData = {
         { type: 'set', id: 'dyvany-kutovi-ms', image: 'images/Дивани-прямі-і-кутові/thumb_Дивани-кутові.-Фабрика-Мебель-Сервіс.png', title: 'Дивани кутові Фабрика Мебель Сервіс', file: 'PDF/Дивани_кутові_МС.pdf' },
         { type: 'set', id: 'dyvany-priami-ms', image: 'images/Дивани-прямі-і-кутові/thumb_Дивани-прямі.-Фабрика-Мебель-Сервіс.png', title: 'Дивани прямі Фабрика Мебель Сервіс', file: 'PDF/Дивани_прямі_МС.pdf' },
         { type: 'set', id: 'dyvany-sokrat', image: 'images/Дивани-прямі-і-кутові/thumb_Дивани-прямі-і-кутові.-Фабрика-Сократ-Свінг.png', title: 'Дивани прямі і кутові Фабрика Сократ Свінг', file: 'PDF/Дивани_прямі_і_кутові_Сократ.pdf' },
-        { type: 'set', id: 'dyvany-mebwood', image: 'images/Дивани-прямі-і-кутові/thumb_Дивани-прямі-і-кутові.-Фабрика-Mebwood.png', title: 'Дивани прямі і кутові Фабрика Mebwood', file: 'PDF/Дивани_прямі_і_кутові_Mebwood.pdf' },
         { type: 'set', id: 'dyvanchiki-ms', image: 'images/Дивани-прямі-і-кутові/thumb_Дитячі-диванчики.-Фабрика-Мебель-Сервіс.png', title: 'Диванчики дитячі Фабрика Мебель Сервіс', file: 'PDF/Дитячі_дивани_МС.pdf' },
         { type: 'back', title: 'Назад' }
     ],
@@ -52,7 +51,6 @@ const galleryData = {
         { type: 'set', id: 'modulniKS', image: 'images/Кухні/thumb_Модульні.png', title: 'Кухні Модульні довільного вибору Фабрика Київський Стандарт', file: 'PDF/Кухні_модульні_КС.pdf' },
         { type: 'set', id: 'techInfoKS', image: 'images/Кухні/thumb_Технічна-інформація.png', title: 'Кухні Технічна інформація Фабрика Київський Стандарт', file: 'PDF/Технічна_інфо_КС.pdf' },
         { type: 'set', id: 'kukhniMS', image: 'images/Кухні/thumb_Кухні.-Фабрика-Мебель-Сервіс.png', title: 'Кухні Фабрика Мебель Сервіс', file: 'PDF/Кухні_МС.pdf' },
-        { type: 'set', id: 'kukhniMebwood', image: 'images/Кухні/thumb_Кухні-і-кут-кухонний.-Фабрика-Mebwood.png', title: 'Кухні Фабрика Mebwood', file: 'PDF/Кухні-кут_Mebwood.pdf' },
         { type: 'back', title: 'Назад' }
     ],
     'myaki-lizhka': [
@@ -87,7 +85,6 @@ const galleryData = {
     'systemy': [
         { type: 'set', id: 'systemyKS', image: 'images/Модульні-системи-для-різних-кімнат/thumb_Системи.-Фабрика-Київський-Стандарт.png', title: 'Системи Фабрика Київський Стандарт', file: 'PDF/Системи_КС.pdf' },
         { type: 'set', id: 'systemyMS', image: 'images/Модульні-системи-для-різних-кімнат/thumb_Системи.-Фабрика-Мебель-Сервіс.png', title: 'Системи Фабрика Мебель Сервіс', file: 'PDF/Системи_МС.pdf' },
-        { type: 'set', id: 'systemyMW', image: 'images/Модульні-системи-для-різних-кімнат/thumb_Колекції.-Фабрика-Mebwood.png', title: 'Колекції Фабрика Mebwood', file: 'PDF/Системи_колекції_Mebwood.pdf' },
         { type: 'back', title: 'Назад' }
     ],
     'spalni': [
@@ -95,7 +92,6 @@ const galleryData = {
         { type: 'set', id: 'spalniKlMM', image: 'images/Спальні/thumb_Спальні-класика.-Фабрика-Миро-Марк.png', title: 'Спальні класика Фабрика Миро Марк', file: 'PDF/Спальні_класика_ММ.pdf' },
         { type: 'set', id: 'spalniMS', image: 'images/Спальні/thumb_Спальні.-Фабрика-Мебель-Сервіс.png', title: 'Спальні Фабрика Мебель Сервіс', file: 'PDF/Спальні_МС.pdf' },
         { type: 'set', id: 'spalniKS', image: 'images/Спальні/thumb_Спальні.-Фабрика-Київський-Стандарт.png', title: 'Спальні Фабрика Київський Стандарт', file: 'PDF/Спальні_КС.pdf' },
-        { type: 'set', id: 'spalniMW', image: 'images/Спальні/thumb_Спальні.-Фабрика-Mebwood.png', title: 'Спальні і ліжка Фабрика Mebwood', file: 'PDF/Спальні_Mebwood.pdf' },
         { type: 'back', title: 'Назад' }
     ],
     'stoly': [
