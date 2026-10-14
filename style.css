@@ -72,7 +72,7 @@ header img {
 }
 
 .logo button {
-  background-color: #EFEFEF;
+  background-color: rgb(244, 197, 8);
   color: #00391F;
   border: 0.2px solid #dcdbdb;
   box-shadow: 0 0 5px 4px #EFEFEF;
@@ -185,7 +185,7 @@ main h1 {
   font-weight: lighter;
   font-size: 48px;
   letter-spacing: 5px;
-  color: white;
+  color: rgb(244, 197, 8);
   text-align: center;
   margin-top: 20px;
 }
@@ -536,7 +536,7 @@ iframe {
   /* Розмір плюсика */
   line-height: 1;
   /* Для кращого вирівнювання */
-  color: white;
+  color: rgb(244, 197, 8);
   transition: transform 0.3s ease-in-out;
   /* Анімація повороту */
   margin-left: 10px;
