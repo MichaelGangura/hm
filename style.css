@@ -72,7 +72,7 @@ header img {
 }
 
 .logo button {
-  background-color: rgb(244, 197, 8);
+  background-color: #fcfcfc;
   color: #00391F;
   border: 0.2px solid #dcdbdb;
   box-shadow: 0 0 5px 4px #EFEFEF;
@@ -99,8 +99,11 @@ header img {
 .pr svg {
   width: 20px;
   height: 20px;
-  fill: #00391F;
   transition: transform 0.3s ease;
+}
+
+.pr svg path {
+  stroke: rgb(244, 197, 8);
 }
 
 .pr:hover svg {
